@@ -9,7 +9,7 @@ export default new class VueSocketIOLogger {
             return;
         }
 
-        window.console.info(this.prefix+`%c${text}`, 'color: blue; font-weight: 600', 'color: #333333', data);
+        window.console.info(this.prefix+`%c${text}`, 'color: blue; font-weight: 600', '', data);
     }
 
     error() {
@@ -33,6 +33,6 @@ export default new class VueSocketIOLogger {
             return;
         }
 
-        window.console.info(this.prefix+`%c${text}`, 'color: blue; font-weight: 600', 'color: #333333', data);
+        window.console.info(this.prefix+`%c${text}`, 'color: blue; font-weight: 600', '', data);
     }
 };

@@ -1,6 +1,6 @@
 {
   "name": "socket.io-vuewrapper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "src/index.js",
   "repository": {
@@ -10,7 +10,6 @@
   "author": "Nick-I-A",
   "license": "MIT",
   "dependencies": {
-    "socket.io-client": "^4.5.1",
-    "vue": "^3.2.37"
+    "socket.io-client": "^4.5.1"
   }
 }

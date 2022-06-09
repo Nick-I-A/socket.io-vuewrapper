@@ -21,7 +21,7 @@ export default class EventEmitter {
         }
         this.listeners.get(event).push({ callback, component });
 
-        Logger.info(`#${event} subscribe, component: ${JSON.stringify(component.$options.__file)}`);
+        Logger.info(`#${event} subscribe, component: ${component.$options.__file}`);
     }
 
     /**
@@ -44,7 +44,7 @@ export default class EventEmitter {
             this.listeners.delete(event);
         }
 
-        Logger.info(`#${event} unsubscribe, component: ${component.$options.name}`);
+        Logger.info(`#${event} unsubscribe, component: ${component.$options.__file}`);
     }
 
     /**

@@ -26,14 +26,22 @@ const vSocket = new VueSocketIO({
 createApp(App).use(vSocket).mount('#app')
 ```
 
+**Parameters**|**Type's**|**Default**|**Required**|**Description**
+-----|-----|-----|-----|-----
+debug|Boolean|`false`|Optional|Enable logging for debug
+connection|String/Socket.io-client|`null`|Required|Websocket server url or socket.io-client instance
+
 src/App.vue
 ```Vue
 ...
 <script>
 export default {
-  beforeMount() {
-    // Send an object to the connected server
-    this.$socket.emit('test', { message: "example" });
+  mounted() {
+    // Check if you are connected to the server
+    if (this.$socket.connected) {
+      // Send an object to the connected server
+      this.$socket.emit('test', { message: "example" });
+    }
   },
   sockets: {
     // Listen for the custom `test` event
