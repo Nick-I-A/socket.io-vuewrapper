@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nick-I-A/socket.io-vue.git"
+    "url": "git+https://github.com/Nick-I-A/socket.io-vuewrapper.git"
   },
   "author": "Nick-I-A",
   "license": "MIT",

@@ -16,7 +16,7 @@ src/main.js
 ```Javascript
 import { createApp } from 'vue';
 import App from './App.vue';
-import VueSocketIO from 'socket.io-vue';
+import VueSocketIO from 'socket.io-vuewrapper';
 
 const vSocket = new VueSocketIO({
     debug: true,
