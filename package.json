@@ -1,0 +1,16 @@
+{
+  "name": "socket.io-vuewrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nick-I-A/socket.io-vue.git"
+  },
+  "author": "Nick-I-A",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io-client": "^4.5.1",
+    "vue": "^3.2.37"
+  }
+}
